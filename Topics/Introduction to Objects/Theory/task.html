@@ -1,0 +1,46 @@
+<h2>Introduction to Objects</h2>
+<html>
+ <head></head>
+ <body>
+  <p>You are already familiar with strings and numbers. These data types are considered <em>primitive</em> because they can only store one value. This can be inconvenient when you have to deal with sets of related information. To work comfortably with collections of values, there are <strong>objects</strong>. Let's find out what objects are and how they work!</p> 
+  <h5 style="text-align: center;">Not everything in JS is an object</h5> 
+  <p>An<strong> object</strong> is a <em>non-primitive</em> data type that represents an unordered collection of <em>properties</em>. A<strong> property</strong> is a part of the object that imitates a variable. It consists of a<strong> key</strong> and a<strong> value</strong> separated by a colon. The key can only be a string or <code class="language-javascript">Symbol</code> (data type, which we will get acquainted with later), but the value may be of any data type. You can create empty objects without a single property:</p> 
+  <pre><code class="language-javascript">let book = {};</code></pre> 
+  <p>There is an alternative way to create an empty object, but it is rarely used in practice:</p> 
+  <pre><code class="language-javascript">let book = new Object();</code></pre> 
+  <p>You can check that both of these methods create an object using the <code class="language-javascript">typeof</code> operator that you already know.</p> 
+  <pre><code class="language-javascript">let book1 = {};
+let book2 = new Object();
+
+console.log(typeof book1); // object
+console.log(typeof book2); // object</code></pre> 
+  <p>If you want to create an object with several properties, all but the last one<em> </em>must be followed by a comma. To understand the syntax better, take a look at the following example:</p> 
+  <pre><code class="language-javascript">let country = {
+  name: "Netherlands",
+  population: 17.18
+};</code></pre> 
+  <p>As in many cases in JavaScript, object creation often starts with defining and initializing a variable. In the example above, we've assigned the object the name <code class="language-javascript">country</code>. Then two properties were specified in curly brackets: the key <code class="language-javascript">name</code> with the value <code class="language-javascript">"Netherlands"</code>, and the key <code class="language-javascript">population</code> with <code class="language-javascript">17.18</code>. As you can see, objects are very useful for grouping data.</p> 
+  <p></p>
+  <div class="alert alert-primary">
+   The syntax with curly brackets used to create objects has its own name: 
+   <strong>literal notation</strong>. It's not the only way to do it, but probably the most common.
+  </div>
+  <p></p> 
+  <h5 style="text-align: center;">Properties</h5> 
+  <p>Objects are one of the pillars of the JavaScript language, so it's important to know how to work with their properties.</p> 
+  <ul> 
+   <li>There is an opportunity to refer to the properties. To access the properties, we use a record with the object name and a dot. Let's use the previous code sample and try to access the <code class="language-javascript">name</code> property:</li> 
+  </ul> 
+  <pre><code class="language-javascript">console.log(country.name); // Netherlands</code></pre> 
+  <ul> 
+   <li>Properties can also be added using the dot symbol and the <code class="language-javascript">=</code> assignment symbol. Let's add to our object a property with the key <code class="language-javascript">capital</code> and the value <code class="language-javascript">"Amsterdam"</code> :</li> 
+  </ul> 
+  <pre><code class="language-javascript">country.capital = "Amsterdam";</code></pre> 
+  <ul> 
+   <li>To delete a property, we can use the <code class="language-javascript">delete</code> operator and a dot. This is how removing the <code class="language-javascript">population</code> property for an object named <code class="language-javascript">country</code> will look like:</li> 
+  </ul> 
+  <pre><code class="language-javascript">delete country.population;</code></pre> 
+  <h5 style="text-align: center;">Conclusion</h5> 
+  <p>Working with grouped data is one of the most common tasks in programming. You now have an important tool that will help you with that: objects and their properties. Way to go!</p>
+ </body>
+</html>

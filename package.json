@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "hs-test-web": "https://github.com/hyperskill/hs-test-web/archive/release.tar.gz",
+    "jest": "^23.6.0",
+    "puppeteer": "^2.1.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

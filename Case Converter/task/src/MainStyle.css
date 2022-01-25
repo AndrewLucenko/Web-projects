@@ -1,0 +1,35 @@
+.flex-container{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.flex-item{
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+#upper-case{
+    background-color: crimson;
+    height: 30px;
+}
+#lower-case{
+    background-color: crimson;
+    height: 30px;
+}
+#proper-case{
+    background-color: crimson;
+    height: 30px;
+}
+#sentence-case{
+    background-color: crimson;
+    height: 30px;
+}
+#save-text-file{
+    background-color: crimson;
+    height: 30px;
+}
+
+textarea{
+    width: 100%;
+    height: 400px;
+}

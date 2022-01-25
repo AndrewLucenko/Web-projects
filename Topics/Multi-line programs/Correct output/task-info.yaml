@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: a
+- text: b
+- text: c
+- text: d
+- text: e
+- text: There's no correct display of this code
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8163#comment
+status: Solved
+record: -1

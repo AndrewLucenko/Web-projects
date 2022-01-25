@@ -1,0 +1,19 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: console.log(Surprisingly good weather today!);
+- text: console.log(&quot;The ship&#x27;s name is &#x27;Brave&#x27;.&quot;);
+- text: console.log(&#x27;Cat\&#x27;s paws.&#x27;);
+- text: console.log(&quot;And &quot;Ciao&quot; is Italian &quot;Bye&quot;.&quot;);
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: main.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8157#comment
+status: Unchecked
+record: -1

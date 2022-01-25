@@ -1,0 +1,12 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  text: konsole.frog(A trifle, even a quite pleasant trifle!))
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8158#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 18 Jan 2022 12:45:55 UTC
+record: -1

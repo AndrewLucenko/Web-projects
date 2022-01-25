@@ -1,0 +1,52 @@
+<h2>Variables</h2>
+<html>
+ <head></head>
+ <body>
+  <p>You can already work in JavaScript with data types, the value of which does not need to be changed. However, when writing large scale programs it is usually necessary to store data and results of intermediate calculations somewhere. For this purpose <strong>variables</strong> are used.</p> 
+  <h5 style="text-align: center;">What is a variable</h5> 
+  <p> A<strong> variable </strong>is a named place in memory where you can store data to access it later. It's like a box with a gift inside: this is also a kind of variable!</p> 
+  <p>Every variable has a <strong>name</strong> to distinguish it from other variables. It is possible to access a value by its variable's name. </p> 
+  <p>Variables are one of the most often used elements of programs, so it is important to understand and use them well.</p> 
+  <h5 style="text-align: center;">Variables declaration</h5> 
+  <p>Before you start working with a variable, you need to <strong>declare</strong> (in other words,<strong> </strong>create) it. JavaScript uses two keywords to create variables: </p> 
+  <ul> 
+   <li><code class="language-javascript">let</code> defines a <strong>mutable variable</strong> the value of which<em> </em>can be changed as many times as needed;</li> 
+   <li><code class="language-javascript">const</code> declares a<strong> constant</strong> whose value you want to forbid overwriting.</li> 
+  </ul> 
+  <p>When you declare a variable, you must give it a name after one of these keywords. It is good practice to assign a variable name that describes its contents. Always try to choose meaningful and readable names for variables to make your code easy to understand. </p> 
+  <h5 style="text-align: center;">Mutable variables</h5> 
+  <p>Let's try to create a mutable variable and understand why it is called that. Let's call it <code class="language-javascript">month</code> and put data into it using the <code class="language-javascript">=</code> symbol:</p> 
+  <pre><code class="language-javascript">let month = "November"; // define the variable and assign it a value</code></pre> 
+  <p>In variables, it is possible to store any type of data. In this case, we saved the string <code class="language-javascript">"November"</code>. You can refer to this line if you use a variable name:</p> 
+  <pre><code class="language-javascript">let month = "November";
+
+console.log(month); // outputs the content of the variable to the console</code></pre> 
+  <p>This code outputs the contents of the variable into the console. In our case, the result will be the string <code class="language-javascript">"November"</code> – you can <a target="_blank" href="https://repl.it/languages/javascript" rel="noopener noreferrer nofollow">check it</a> yourself.</p> 
+  <p></p>
+  <div class="alert alert-warning">
+   The case of a name is important: 
+   <code class="language-javascript">month</code> is not the same as 
+   <code class="language-javascript">Month</code>.
+  </div>
+  <p></p> 
+  <p>Now let's try to change the variable and output a new value to the console:</p> 
+  <pre><code class="language-javascript">let month = "November";
+month = "December";
+
+console.log(month); // December</code></pre> 
+  <p>As you can see, the value of the variable has really changed. Now it stores the string <code class="language-javascript">December</code>.</p> 
+  <h5 style="text-align: center;">Other ways to declare variables</h5> 
+  <p>In older scripts, you may see that <code class="language-javascript">var</code> keyword is used instead of <code class="language-javascript">let</code>. It looks like this:</p> 
+  <pre><code class="language-javascript">var age = 21;</code></pre> 
+  <p>This is an outdated way of declaring a variable. The <code class="language-javascript">var</code> keyword is not bad per se, but there is no need to use <code class="language-javascript">var</code> in new projects. You can also find code when variables are declared without keywords:</p> 
+  <pre><code class="language-javascript">age = 21;</code></pre> 
+  <p>It's not good practice either. In the future we will consider why it is a bad idea to declare variables without keywords or with <code class="language-javascript">var</code>, but for now it is more useful to get acquainted with the constants.</p> 
+  <h5 style="text-align: center;">Constants</h5> 
+  <p>Declare the immutable variable called <code class="language-javascript">language</code> and add the string <code class="language-javascript">"JavaScript"</code> as a value:</p> 
+  <pre><code class="language-javascript">const language = "JavaScript";</code></pre> 
+  <p>If we wanted to change the value of a variable created with the <code class="language-javascript">const</code> keyword, we would have failed and got an error:</p> 
+  <pre><code class="language-javascript">const language = "JavaScript";
+language = "PHP"; // error</code></pre> 
+  <p>Now that you know about variables, you will be able to create more complex and interesting programs. </p>
+ </body>
+</html>

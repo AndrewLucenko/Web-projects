@@ -1,0 +1,15 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  text: |-
+    function difference(a, b, c) {
+        // change it
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8395#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 20 Jan 2022 13:00:56 UTC
+record: -1

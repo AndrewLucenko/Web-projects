@@ -1,0 +1,15 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  text: |-
+    // сhange the code below
+    const status = "online";
+    status = "offline";
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8193#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 18 Jan 2022 13:35:55 UTC
+record: -1
